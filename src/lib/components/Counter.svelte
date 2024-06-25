@@ -1,7 +1,9 @@
 <script lang="ts">
+  import { Button } from "$lib/components/ui/button";
+
   let count: number = 0;
 </script>
 
-<button on:click={() => (count -= 1)} aria-label="減算">-</button>
+<Button on:click={() => (count -= 1)} aria-label="減算">-</Button>
 {count}
-<button on:click={() => (count += 1)} aria-label="加算">+</button>
+<Button on:click={() => (count += 1)} aria-label="加算">+</Button>

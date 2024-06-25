@@ -1,6 +1,7 @@
 <script lang="ts">
   import { Button } from "$lib/components/ui/button";
   import { Input } from "$lib/components/ui/input";
+  import Counter from "$lib/components/Counter.svelte";
   import { invoke } from "@tauri-apps/api/core";
 
   let name = "";
@@ -22,5 +23,7 @@
   </form>
   <p>{greetMsg}</p>
 
-  <Button on:click={handleClink}>ほたん</Button>
+  <div><Button on:click={handleClink}>ほたん</Button></div>
+
+  <Counter />
 </div>
